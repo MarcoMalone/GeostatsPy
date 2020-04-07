@@ -4425,16 +4425,16 @@ def cova3(x1, y1, z1, x2, y2, z2, nst, c0, pmx, cc, aa, it, anis, anis_v, rotmat
     :param z2: z coordinate of second point
     :param nst: number of nested structures (maximum of 4)
     :param c0: isotropic nugget constant (TODO: not used)
-    :param pmx: TODO
+    :param pmx: maximum variogram value needed for kriging when using power model
     :param cc: multiplicative factor of each nested structure
     :param aa: parameter `a` of each nested structure
-    :param it: TODO
-    :param ang: TODO: not used
+    :param it: type of each nested structure
+    :param ang: azimuth angle for the principle direction of continuity (TODO: not used)
     :param anis: Horizontal aspect ratio
 	:param anis_v: Vertical aspect ratio
     :param rotmat: rotation matrices
-    :param maxcov: TODO
-    :return: TODO
+    :param maxcov: maximum covariance from the variogram model
+    :return: covariance obtained from the variogram model
     """
     """ Revised from Wendi Liu's code """
 
